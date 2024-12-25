@@ -1,0 +1,22 @@
+{
+  "name": "netflix-inspired-web-design",
+  "version": "1.0.0",
+  "description": "A modern web design project inspired by Netflix, featuring high-quality video integration and dynamic sections for special offers.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined yet.'"
+  },
+  "keywords": [
+    "web",
+    "design",
+    "video",
+    "offers",
+    "modern"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
