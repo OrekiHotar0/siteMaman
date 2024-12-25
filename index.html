@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Inspired Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/styles1.css">
+    <link rel="stylesheet" href="assets/styles/styles2.css">
+</head>
+<body>
+    <div id="header"></div>
+    
+    <div class="radio-inputs">
+        <div class="radio">
+            <input type="radio" id="homepage" name="menu" checked>
+            <label class="name" for="homepage" onclick="scrollToSection('header')">Homepage</label>
+        </div>
+        <div class="radio">
+            <input type="radio" id="contents" name="menu">
+            <label class="name" for="contents" onclick="scrollToSection('offers')">Contents</label>
+        </div>
+        <div class="radio">
+            <input type="radio" id="credits" name="menu">
+            <label class="name" for="credits" onclick="scrollToSection('credits-section')">Credit</label>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="assets/videos/promo_video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas les vidéos HTML5.
+        </video>
+    </div>
+
+    <div id="welcome-message" class="welcome-message">
+        <h1>Bienvenue Maman !</h1>
+        <p>Je t'ai fait une liste de sites utiles ❤</p>
+        <p>Un site créé pour ma maman</p>
+    </div>
+
+    <div id="offers">
+        <h2>Sites de streaming officiels (avec sous-titres en français/anglais)</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Site</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://www.viki.com" target="_blank">Viki</a></td>
+                    <td>Plateforme spécialisée en dramas asiatiques.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.netflix.com" target="_blank">Netflix</a></td>
+                    <td>Catalogue varié de K-Dramas.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.iq.com" target="_blank">iQIYI</a></td>
+                    <td>Idéal pour les C-Dramas et quelques K-Dramas.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://wetv.vip" target="_blank">WeTV</a></td>
+                    <td>Beaucoup de C-Dramas et de programmes asiatiques.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.kocowa.com" target="_blank">KOCOWA</a></td>
+                    <td>Plateforme dédiée aux K-Dramas et variétés.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.youtube.com" target="_blank">YouTube - chaînes officielles</a></td>
+                    <td>Certaines séries sont disponibles sur les chaînes officielles (comme SBS, MBC).</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.disneyplus.com" target="_blank">Disney+</a></td>
+                    <td>Héberge désormais certains dramas récents.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.hulu.com" target="_blank">Hulu</a></td>
+                    <td>Catalogue K-Drama (disponibilité selon région).</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Sites pour les actualités et critiques</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Site</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://www.soompi.com" target="_blank">Soompi</a></td>
+                    <td>Nouvelles et articles sur les K-Dramas.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.hancinema.net" target="_blank">HanCinema</a></td>
+                    <td>Infos détaillées sur les acteurs, épisodes et critiques.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://asianwiki.com" target="_blank">AsianWiki</a></td>
+                    <td>Base de données complète sur les dramas.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://mydramalist.com" target="_blank">MyDramaList</a></td>
+                    <td>Plateforme où noter et suivre ses dramas.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.dramabeans.com" target="_blank">Dramabeans</a></td>
+                    <td>Recap des épisodes et articles.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.kdramastars.com" target="_blank">KDramaStars</a></td>
+                    <td>Actualités et exclusivités sur les K-Dramas.</td>
+                </tr>
+                <tr>
+                    <td><a href="http://www.china.org.cn/entertainment" target="_blank">China.org.cn - Entertainment</a></td>
+                    <td>Actualités sur les C-Dramas.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="footer"></div>
+
+    <button class="button" onclick="scrollToTop()">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
+        </svg>
+    </button>
+
+    <div id="credits-section" class="credits-page">
+        <h1>Crédits</h1>
+        <div class="credits-content">
+            <p>3 Allée Bernard De Palissy</p>
+            <p><a href="mailto:ddanon@sepr.net">ddanon@sepr.net</a></p>
+            <p>Jamais</p>
+            <p>07 85 95 82 37</p>
+            <p>Davann 2024 - Tous droits réservés. <a href="#">Mentions légales</a> <a href="#">Données personnelles</a></p>
+            <p>@ Family Danon &</p>
+        </div>
+    </div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
