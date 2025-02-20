@@ -1,0 +1,90 @@
+⏳ Simulation avancée de la relativité temporelle avec accélération progressive
+📌 Objectif
+Créer une horloge interactive où la vitesse du temps varie dynamiquement en fonction de la distance de l’utilisateur par rapport à un capteur de présence. L’expérience est renforcée par des effets visuels, sonores et haptiques pour une immersion totale.
+
+📝 Prompt détaillé
+"Développe un programme pour plusieurs micro:bit simulant une horloge dont la vitesse d’écoulement du temps dépend de la distance mesurée par un capteur de présence, avec des effets lumineux, sonores et haptiques."
+
+🎯 Mécanisme général
+Chaque micro:bit joue un rôle précis :
+
+🎛 Micro:bit Principal → Gère la logique de l’horloge et la communication.
+⏳ Micro:bit Aiguilles → Anime les aiguilles selon la relativité temporelle.
+🔊 Micro:bit Son et Haptique → Génère des effets sonores et haptiques selon la vitesse du temps.
+📡 Module Capteur → Mesure la distance et envoie les données.
+🚀 Nouveautés & améliorations
+🕰️ Gestion avancée des aiguilles et de la relativité temporelle
+🔹 Petite aiguille (heures) → Variation logarithmique pour éviter des changements trop brusques.
+🔹 Grande aiguille (minutes) → Variation réactive avec un facteur d’amplification.
+🔹 Aiguille des secondes → Mouvement ultra-fluide pour renforcer l’immersion.
+
+✔️ Règle d’accélération améliorée :
+
+Proche du capteur → Le temps ralentit exponentiellement 🔴.
+Zone intermédiaire → Ajustement fluide et progressif 🟠.
+Éloigné du capteur → Accélération dynamique et exponentielle 🔵.
+Super éloigné → Mode "hypervitesse" 🌌 (limité pour éviter un effet irréaliste).
+✔️ Compensation dynamique : Empêche les variations extrêmes en douceur.
+✔️ Système anti-saccades : Mémorise les mouvements récents pour éviter des oscillations trop brutales.
+
+🎨 Affichage LED dynamique et immersif
+🔴 Très lent → Proche du capteur, temps presque figé.
+🟠 Normal → Rythme classique.
+🟢 Rapide → Accélération notable.
+🔵 Très rapide → Temps qui file.
+
+✔️ Nouveaux effets visuels :
+✅ Pulsation progressive des LED → Plus le temps ralentit, plus la luminosité fluctue lentement.
+✅ Vague lumineuse dynamique → Visualisation du temps qui accélère ou ralentit.
+✅ Effet "trou noir" → Représentation de la gravité temporelle avec un dégradé lumineux.
+
+🔊 Retour sonore dynamique et immersif
+🎶 Génération de sons adaptatifs selon la vitesse du temps :
+✔️ Basse fréquence = Temps ralenti (sons graves et lents).
+✔️ Haute fréquence = Temps accéléré (sons aigus et rapides).
+✔️ Intensité progressive pour éviter les changements brusques.
+
+🎼 Modes sonores (choix via boutons du micro:bit) :
+
+Mode science-fiction 🔬 (sons futuristes).
+Mode naturel 🌿 (bruit d’eau, vent, etc.).
+Mode musical 🎵 (mélodies ajustées à la vitesse du temps).
+📳 Retour haptique (vibration) pour une immersion physique
+📳 Micro-moteurs vibrants intégrés pour ressentir les variations temporelles :
+✔️ Vibration faible = Temps normal.
+✔️ Vibration intense = Temps très ralenti.
+✔️ Oscillation progressive = Ajustement de vitesse.
+
+📡 Synchronisation et communication radio avancée
+✅ Transmission en temps réel entre les micro:bit.
+✅ Mode secours en cas de perte de connexion.
+✅ Filtrage des variations excessives pour éviter des instabilités.
+✅ Synchronisation adaptative et correction automatique en cas d’anomalie.
+
+📊 Enregistrement et analyse des variations temporelles
+📉 Journalisation en temps réel :
+✔️ Stockage des valeurs avec une mémoire tampon circulaire.
+✔️ Graphique LED interactif pour voir l’évolution temporelle.
+✔️ Comparaison des tendances (accélération vs ralentissement).
+
+💾 Exportation & Diagnostic :
+✔️ Sauvegarde des données via liaison USB (analyse avec Python, Excel).
+✔️ Détection des anomalies avec rapport automatique.
+✔️ Mode debug avancé avec journal d’événements détaillé.
+
+🎮 Mode "Exploration du Temps"
+🕹 Expérimente différents scénarios avec des réglages personnalisables :
+✔️ Mode "calibration" → L’utilisateur reste quelques secondes devant le capteur pour ajuster la vitesse à sa manière de bouger.
+✔️ Mode "profils utilisateurs" → Tu choisis entre un effet de ralentissement brutal ou progressif.
+✔️ Mode "gravité temporelle" → Simule la distorsion temporelle d’un trou noir.
+
+🌍 Compatibilité avec d’autres capteurs
+📡 Possibilité d’intégrer :
+✔️ Capteur de température → Influence la vitesse du temps (ex. : plus chaud = plus rapide).
+✔️ Capteur de lumière → Modifie la perception temporelle selon l’éclairage ambiant.
+
+🎯 Pourquoi cette version est ultime ?
+🔥 Ultra immersive → Effets visuels, sonores et haptiques.
+⚙️ Personnalisable → Ajustement manuel et profils de simulation.
+📡 Robuste et fiable → Correction automatique et synchronisation avancée.
+🛠 Évolutif → Compatible avec d’autres capteurs.
